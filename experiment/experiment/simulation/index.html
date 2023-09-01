@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<head>
+	<title>Registration Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="experiment/simulation/css/style.css">
+</head>
+
+<center> <div class="container" >
+    <div class="row">
+      <h1><u>JAVASCRIPT FORM VALIDATION</u></h1> <br><br>
+      <h3>Implement the validations from below to see effect</h3><br>
+      
+      
+      
+      <!-- NAME STARTS-->
+      <div class="col-sm-3">
+            <div class="tbox">
+                <h4>Name : </h4>
+                <p><b>< input type="text"></b> gives a box for text input.<br> 
+                    It is useful for entering names,surnames,keywords etc.  </p><br>
+                
+          <button type="button" class="btn btn-success" onclick='document.getElementById("jsCode").
+          innerHTML=`<!DOCTYPE html>
+<head>
+</head>
+<body style="text-align:center">
+    <h1 style="text-decoration:underline;">Registration Form</h1>
+    <form name="theform" onsubmit="return validateFunction()">
+  Name: <input type="text" name="fname" placeholder="Sam">
+  <br><br>
+  <input type="submit" value="Submit">
+</form> <br> <br>
+
+<script>
+function validateFunction() {
+  var x = document.forms["theform"]["fname"].value;
+  if (x == "" || x==null) {
+    alert("Name must be filled out");
+    return false;
+  }
+  else {
+  window.alert("Validation done");
+  return false;
+  }
+}
+</script>
+</body>
+</html>`'>
+        Implement this </button></div>
+        </div>
+        <!-- NAME ENDS -->
+
+        <!-- PHONE NUMBER STARTS -->
+
+        <div class="col-sm-3">
+            <div class="tbox">
+                <h4>Phone number :</h4>
+                <p><b>< input type="tel"></b> lets you to enter a telephone number.<br>Different patterns can be set for the input format.</p><br>
+                
+          <button type="button" class="btn btn-success" onclick='document.getElementById("jsCode").
+          innerHTML=`<!DOCTYPE html>
+<head>
+</head>
+<body style="text-align:center">
+    <h1 style="text-decoration:underline;">Registration Form</h1>
+    <form name="theform" onsubmit ="return validateFunction()">
+  Name: <input type="text" name="fname" placeholder="Sam">
+  <br><br>
+  Phone Number: <input name="phone" type="tel" placeholder="9356734567"> <br> <br>
+  <input type="submit" value="Submit">
+</form> <br> <br>
+
+<script>
+function validateFunction() {
+  var x = document.forms["theform"]["fname"].value;
+  var y = document.forms["theform"]["phone"].value;
+
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  if(y.length<10){
+    alert("Enter 10 digit mobile number");
+    return false;
+  }
+  window.alert("Validation done");
+  return false;
+}
+</script>
+</body>
+</html>`'>
+        Implement this </button></div>
+        </div>
+
+<!-- PHONE NUMBER ENDS -->
+
+<!-- EMAIL STARTS -->
+        <div class="col-sm-3">
+            <div class="tbox">
+                <h4>Email:</h4> 
+                    <p><b>< input type="email"></b> lets you to enter email.
+                        <br>It checks for the '@' character and verifies the mail entered.</p> <br>
+              <button type="button" class="btn btn-success" onclick='document.getElementById("jsCode").
+              innerHTML=`<!DOCTYPE html>
+<head>
+</head>
+<body style="text-align:center">
+    <h1 style="text-decoration:underline;">Registration Form</h1>
+    <form name="theform" onsubmit="return validateFunction()">
+  Name: <input type="text" name="fname" placeholder="Sam">
+  <br><br>
+  Phone Number: <input name="phone" type="tel" placeholder="9356734567"> <br> <br>
+  Email: <input name="email" type="text" placeholder="abc@xyz.com"> <br> <br>
+  <input type="submit" value="Submit">
+</form> <br> <br>
+
+<script>
+function validateFunction() {
+  var x = document.forms["theform"]["fname"].value;
+  var y = document.forms["theform"]["phone"].value;
+  var z=document.forms["theform"]["email"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  if(y.length<10){
+    alert("Enter 10 digit mobile number");
+    return false;
+  }
+  if (z == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+
+  window.alert("Validation done");
+return false;
+}
+</script>
+</body>
+</html>`'> 
+            Implement this </button></div>
+
+        </div>
+<!-- EMAIL ENDS -->
+
+<!-- DATE OF BIRTH STARTS -->
+        <div class="col-sm-3">
+            <div class="tbox">
+                <h4>Date of Birth:</h4>
+                    <p><b>< input type="date" name="dob"></b> this enables to enter date of birth.
+                    <br>This field is very useful and interactive as one can click and choose the date. </p> <br>
+              <button type="button" class="btn btn-success" onclick='document.getElementById("jsCode").
+              innerHTML=`<!DOCTYPE html>
+<head>
+</head>
+<body style="text-align:center">
+    <h1 style="text-decoration:underline;">Registration Form</h1>
+    <form name="theform" onsubmit="return validateFunction()">
+  Name: <input type="text" name="fname" placeholder="Sam">
+  <br><br>
+  Phone Number: <input name="phone" type="tel" placeholder="9356734567"> <br> <br>
+  Email: <input name="email" type="email" placeholder="abc@xyz.com"> <br> <br>
+  Date Of Birth: <input type="date" name="dob"><br> <br>
+  <input type="submit" value="Submit">
+</form> <br> <br>
+
+<script>
+function validateFunction() {
+  var x = document.forms["theform"]["fname"].value;
+  var y = document.forms["theform"]["phone"].value;
+  var z=document.forms["theform"]["email"].value;
+  var d = document.forms["theform"]["dob"].value;
+
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  if(y.length<10){
+    alert("Enter 10 digit mobile number");
+    return false;
+  }
+  if (z == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+  if(d == "")
+  {
+    alert("Date of Birth musat be filled out");
+    return false;
+  }
+  window.alert("Validation done");
+return false;
+}
+</script>
+</body>
+</html>`'>
+            Implement this </button></div>
+
+        </div>
+
+        <!-- DOB ENDS -->
+        </div>
+        </div>
+        </center>
+
+        <!-- WINDOW TO REFLECT CHANGES -->
+
+        <center>
+        	<div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+<div class="code">
+  <textarea id="jsCode" style="height: 96%">
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <h2 style="color: blue;text-align: center;">Choose from the above 4 input types to learn about various input types of a Registration form in HTML</h2>
+</body>
+</html>
+</textarea>  
+<button type="button" style="background-color: rgb(111, 151, 211); " class="btn btn-success" onclick="showPreview()">
+Try this out
+</button>    
+</div>
+</div>
+
+<div class="col-lg-6">
+<div class="preview">
+  <iframe id="preview-window"></iframe>
+</div>
+</div>
+</div>
+</div>
+            </center>
+            <!-- WINDOW TO REFLECT CHANGES CLOSED -->
+
+            <!-- REGISTRATION FORM FOR PRACTICE -->
+<center>
+  <div class="container">
+    <div class="col-sm-12">
+    <h1 style="text-align: center;"><u>Registration form for practice</u></h1>
+    <form name="RegForm" 
+          onsubmit="return validation()">
+          
+        <p>Name: <input type="text" 
+                        size="65" name="Name"></p>
+        <br />
+        <p>Address: <input type="text" 
+                           size="65" name="Address"></p>
+        <br />
+        <p>E-mail Address: <input type="text" 
+                               size="65" name="EMail"></p>
+        <br />
+        <p>Password: <input type="password" 
+                            size="65" name="Password"></p>
+        <br />
+        <p>Mobile Number: <input type="text" 
+                             size="65" name="Mobile"></p>
+        <br />
+        <p>Date of birth: <input type="date" name="dob1"
+                              size="65" name="dob1"></p>
+         <br/>                     
+  
+        <p>
+            SELECT YOUR COURSE
+            <select type="text" value="" name="Subject">
+              <option>Select</option>  
+              <option>BTECH</option>
+                <option>BBA</option>
+                <option>BCA</option>
+                <option>B.COM</option>
+            </select>
+        </p>
+        <br />
+        <br />
+        
+        <p>
+            <input type="submit" 
+                   value="Submit" style="background-color: rgb(111, 151, 211); "/>
+            <input type="reset" 
+                   value="Reset" style="background-color: rgb(111, 151, 211); "/>
+        </p>
+      
+    </form>
+  </div>
+<!-- </center> -->
+
+
+
+<!--last try window start-->
+ <!-- <center> -->
+          <div class="container">
+            <div class="row">
+              <h1><u>Write your own code for the registration from</u></h1> <br><br>
+              <div class="col-lg-6">
+<div class="code">
+  <textarea id="jsCode2" style="height: 96%">
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <h4>Enter your code here</h4>
+    <script type="text/javascript">
+      //Enter javascript code here
+    </script>
+</body>
+</html>
+</textarea>  
+<button type="button" style="background-color: rgb(111, 151, 211); " class="btn btn-success" onclick="showPreview2()">
+Try this out
+</button>    
+</div>
+</div>
+
+<div class="col-lg-6">
+<div class="preview">
+  <iframe id="preview-window2"></iframe>
+</div>
+</div>
+</div>
+</div>
+            </center>
+            <!-- last try window end-->
+  <script>
+  function showPreview(){
+  var jsCode = "" +document.getElementById("jsCode").value+ "";
+  var frame1 = document.getElementById("preview-window").contentWindow.document;
+  frame1.open();
+  frame1.write(jsCode);
+  frame1.close();
+}
+
+//last try window 
+ function showPreview2(){
+  var jsCode2 = ""+document.getElementById("jsCode2").value+"";
+  var frame = document.getElementById("preview-window2").contentWindow.document;
+  frame.open();
+  frame.write(jsCode2);
+  frame.close();
+}
+
+//registration form js
+function validation() {
+        var name = document.forms["RegForm"]["Name"];
+        var x = document.forms["RegForm"]["EMail"];
+        var phone = document.forms["RegForm"]["Mobile"];
+        var what = document.forms["RegForm"]["Subject"];
+        var password = document.forms["RegForm"]["Password"];
+        var address = document.forms["RegForm"]["Address"];
+        var dob2 = document.forms["RegForm"]["dob1"];
+          
+        
+        var phoneno = /^\d{10}$/;
+
+        if (name.value == "") {
+            window.alert("Please enter your name.");
+            name.focus();
+            return false;
+        }
+  
+        if (address.value == "") {
+            window.alert("Please enter your address.");
+            address.focus();
+            return false;
+        }
+
+        if(x.value == "")
+        {
+          window.alert("Please enter your email");
+          x.focus();
+          return false;
+        }
+        
+        if (password.value.length<8) {
+            window.alert("Please enter password of length more than 8");
+            password.focus();
+            return false;
+        }
+
+        if (!phone.value.match(phoneno) && phone.value.length<10) {
+            window.alert("Please enter valid mobile number.");
+            phone.focus();
+            return false;
+        }
+  
+  
+        if (what.selectedIndex < 1) {
+            alert("Please enter your course.");
+            what.focus();
+            return false;
+        }
+
+        if(dob2.value == ""){
+          window.alert("Please enter date of birth");
+          dob2.focus();
+          return false;
+        }
+
+        window.alert("All validations successful");
+        return false;
+    }
+</script>
+</body>
+</html>
