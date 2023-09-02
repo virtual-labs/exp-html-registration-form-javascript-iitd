@@ -7,7 +7,7 @@
 <br>c.	tag
 <br>d.	short
 <br>
-<br>
+
 
 <br>Q2) Which of the following input type lets you enter date of birth?
 <br>a.	time
