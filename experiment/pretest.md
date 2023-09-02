@@ -11,7 +11,7 @@
 
 <br>Q2) Which of the following input type lets you enter date of birth?
 <br>a. time
-<br><b>b. date</b>
+<br>b. <b>date</b>
 <br>c. birth
 <br>d. dob<br>
 
@@ -21,4 +21,4 @@
 <br>a. Phone number
 <br>b. Date of birth
 <br>c. Password
-<br><b>d. Name</b>
+<br>d. <b>Name</b>
