@@ -3,7 +3,7 @@
 
 <br>Q1) Which of the following attribute gives a short hint for an input field?
 <br>a.	hint
-<br><b>b.	placeholder</b>
+<br><b>b. placeholder</b>
 <br>c.	tag
 <br>d.	short
 <br>
@@ -13,7 +13,7 @@
 <br>a.	time
 <br><b>b.	date</b>
 <br>c.	birth
-<br>d.	dob
+<br>d.	dob<br>
 
 <br>
 
