@@ -1,4 +1,3 @@
-### Procedure
 ##### These procedure steps will be followed on the simulator
 
 1. Create a registration form using HTML and CSS.<br>
